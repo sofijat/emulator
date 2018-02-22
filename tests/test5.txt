@@ -1,0 +1,19 @@
+#TabelaSimbola
+SEG 1 .data 1 0x100 0x40 RWO
+SYM 2 a -1 0x0a L
+SYM 3 b -1 0x14 L
+SYM 4 START 5 0x200 G
+SEG 5 .text 5 0x200 0x14 RXO
+#rel.data
+.data
+0a 00 00 00 0a 00 00 00 0a 00 00 00 0a 00 00 00 
+0a 00 00 00 0a 00 00 00 0a 00 00 00 0a 00 00 00 
+0a 00 00 00 0a 00 00 00 0a 00 00 00 0a 00 00 00 
+0a 00 00 00 0a 00 00 00 0a 00 00 00 0a 00 00 00 
+
+#rel.text
+.text
+80 08 01 36 00 00 c5 04 00 00 00 00 00 00 c0 02 
+c8 00 00 00 
+#end
+
